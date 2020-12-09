@@ -2,3 +2,6 @@
 *.css.map
 *.sass.map
 *.scss.map
+package.json
+sass/.DS_Store
+sass/layouts/.DS_Store
