@@ -1,0 +1,21 @@
+{
+  "name": "linondjouliana_3_08122020",
+  "version": "1.0.0",
+  "description": "projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix" : "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiyanaSC/LINONDjouliana_3_08122020.git"
+  },
+  "author": "LINON Djouliana",
+  "license": "UNLICENSED",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/LiyanaSC/LINONDjouliana_3_08122020/issues"
+  },
+  "homepage": "https://github.com/LiyanaSC/LINONDjouliana_3_08122020#readme"
+}
