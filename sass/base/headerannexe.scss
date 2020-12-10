@@ -1,11 +1,4 @@
 
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
 header{
     width: 100%;
     display: flex;
@@ -18,12 +11,4 @@ header{
     font-family: $font-family-logo;
     margin: auto;
     
-}
-
-a{
- font-style: none;
- color: black;
-}
-section{
-    width: 100%;
 }

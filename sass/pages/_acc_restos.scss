@@ -1,0 +1,6 @@
+.restaurants{
+    @include sextion_style;
+    background-color: darken(map-get($color-family,white), 4%);
+       
+}
+

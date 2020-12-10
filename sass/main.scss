@@ -1,6 +1,8 @@
-//exemples d'import, penser à supprimer ce qui est inutile
+//liste d'imports
 @import "./utils/variables";
-@import "./pages/accueil.scss";
-@import "./base/base";
+@import "./pages/acc_search";
+@import "./pages/acc_fonct";
+@import "./base/headerannexe";
+@import "./base/semantique";
+@import "./base/normes";
 
-@import "./layouts/form";

@@ -1,4 +1,64 @@
+//variables
 $font-family-logo: 'Shrikhand', cursive;
 $font-family-txt: 'Roboto', sans-serif;
+$shadow: 0px 5px 10px rgb(197, 196, 196);
+$arrondis: 25px 25px 25px 25px;
+$square_rounded: 20px;
 
-$color-family: (violet:#9356DC, pink:#FF79DA, green:#99E2D0, white:#fff)
+//listes
+$text-sizes: 1rem, 2rem, 3rem;
+$btn-heigt: 50px, 70px;
+//maps
+$color-family: (violet:#9356DC, pink:#FF79DA, green:#99E2D0, white:#fff);
+
+//mixins
+@mixin box_norme_basique {
+    padding: 0%;
+    margin: 0%;
+}
+@mixin semantique_norme_basique{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+@mixin box_width_egale_conteur {
+    margin: 0%;
+    width: 100%;
+}
+@mixin box_norme_flottant {
+    border-radius: $square_rounded;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: $shadow;
+}
+@mixin boite_cliquable {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+@mixin sextion_style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    font-family: $font-family-txt;
+    
+}
+@mixin direction-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin direction-desktop {
+    display: flex;
+    flex-direction: row;
+}
+@mixin txt-center {
+    text-align: center;
+    ;
+    
+}
+
+//boucles

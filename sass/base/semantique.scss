@@ -1,0 +1,28 @@
+
+body
+{
+    @include direction-mobile;
+    @include semantique_norme_basique;
+    height: 100%;
+    
+}
+header
+{
+    @include semantique_norme_basique;
+    box-shadow: $shadow;
+    position: relative;
+    height: 70px;
+}
+
+main
+{
+    @include semantique_norme_basique;
+}
+
+
+section
+{
+    @include semantique_norme_basique;
+    @include direction-mobile;
+    
+}

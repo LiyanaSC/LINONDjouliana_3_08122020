@@ -1,13 +1,90 @@
-.localisation {
-  background-color: #cccccc;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
+.recherche {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+.recherche__localisation {
+  background-color: #e8e8e8;
+  display: block;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  min-height: 50px;
+  width: 100%;
+}
+.recherche__description {
+  display: block;
+  margin: 0%;
+  padding: 30px;
+  text-align: center;
+  word-break: break-word;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.recherche__description--bold {
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.recherche .btn {
+  background-color: #FF79DA;
+  border-radius: 25px 25px 25px 25px;
+  height: 50px;
+  box-shadow: 0px 5px 10px #c5c4c4;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 50px;
+}
+.recherche .btn--cliquable {
+  padding: 0%;
+  margin: 0%;
   width: 100%;
   height: 100%;
+  color: white;
+  padding: auto;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+.fonctionnement__Titre {
+  margin: 0%;
+  width: 100%;
+  padding: 30px;
+  text-indent: 30px;
+  font-size: 2rem;
+}
+.fonctionnement__guide {
+  display: flex;
+  justify-content: baseline;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 5px 10px #c5c4c4;
+  width: 80%;
+  background-color: #fafafa;
+}
+.fonctionnement__guide__number {
+  display: inline-block;
+  padding: 0%;
+  margin: 0%;
+  position: relative;
+  left: -20px;
+  background-color: #9356DC;
+  border-radius: 10px;
+  width: 20px;
+  text-align: center;
+  color: white;
 }
 
 header {
@@ -23,13 +100,47 @@ header {
   margin: auto;
 }
 
-a {
-  font-style: none;
-  color: black;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  box-shadow: 0px 5px 10px #c5c4c4;
+  position: relative;
+  height: 70px;
+}
+
+main {
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
 }
 
 section {
+  padding: 0%;
+  margin: 0%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fas {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

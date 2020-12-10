@@ -1,0 +1,51 @@
+
+.recherche
+{
+    @include sextion_style;
+    background-color: darken(map-get($color-family,white), 4%);
+    
+        &__localisation
+        {
+            background-color: darken(map-get($color-family,white), 9%);
+            display: block;
+            @include box_norme_basique;
+            text-align: center;
+            min-height: 50px;
+            width: 100%;
+            
+        }
+        &__description{
+            display: block;
+            margin: 0%;
+            padding: 30px;
+            
+            text-align: center;
+            word-break: break-word;
+            font-size: nth($text-sizes,1);
+            font-weight: lighter;
+           
+                &--bold{
+                    display: block;
+                    font-weight: bold;
+                    font-size: nth($text-sizes,2);
+                }
+        }
+        .btn{
+           
+            background-color: map-get($color-family,pink);
+            border-radius: $arrondis;
+            height: nth($btn-heigt,1);   
+            box-shadow: $shadow;
+            text-align: center;
+            width: 60%;
+            margin-bottom: 50px;
+
+                &--cliquable{
+                    @include boite_cliquable;
+                    color: white;
+                    padding: auto;
+                }
+
+        }
+}
+

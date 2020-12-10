@@ -1,0 +1,30 @@
+.fonctionnement{
+    @include sextion_style;
+    background-color: white;
+        &__Titre{
+            @include box_width_egale_conteur;
+            padding: 30px;
+            text-indent: 30px;
+            font-size: nth($text-sizes,2);
+
+        }
+        &__guide{
+           display: flex; 
+           justify-content: baseline;
+           @include box_norme_flottant;
+           width: 80%;
+           background-color: darken(map-get($color-family,white), 2%);
+            &__number{
+                display: inline-block;
+                @include box_norme_basique;
+                position: relative;
+                left: -20px;
+                background-color: map-get($color-family, violet);
+                border-radius: 10px;
+                width: 20px;
+                text-align: center;
+                color: white;
+                
+            }
+        }
+}
