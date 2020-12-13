@@ -1,5 +1,6 @@
 
-header{
+.header_annexes{
+     @include semantique_norme_basique;
     width: 100%;
     display: flex;
     justify-content: flex-start;

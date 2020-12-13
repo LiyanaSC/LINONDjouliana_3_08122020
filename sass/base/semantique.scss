@@ -6,17 +6,20 @@ body
     height: 100%;
     
 }
-header
+.header_principal
 {
     @include semantique_norme_basique;
     box-shadow: $shadow;
+    align-items:center;
     position: relative;
     height: 70px;
+
 }
 
 main
 {
     @include semantique_norme_basique;
+
 }
 
 
@@ -25,4 +28,22 @@ section
     @include semantique_norme_basique;
     @include direction-mobile;
     
+}
+footer{
+    width: 100%;
+    background-color: darken(map-get($color-family,white), 85%);
+    color: white;
+    padding: 30px;
+        >.liens_divers{
+            margin: 20px;
+            color: white;
+            font-family: $font-family-txt;
+            line-height: 2;
+        }
+        >h3{
+            display: block;
+            line-height: 2;
+            
+            padding-left: 20px;
+        }
 }

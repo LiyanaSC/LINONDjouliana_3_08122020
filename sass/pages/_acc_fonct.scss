@@ -2,10 +2,7 @@
     @include sextion_style;
     background-color: white;
         &__Titre{
-            @include box_width_egale_conteur;
-            padding: 30px;
-            text-indent: 30px;
-            font-size: nth($text-sizes,2);
+            @include format_titre;
 
         }
         &__guide{
@@ -18,7 +15,7 @@
                 display: inline-block;
                 @include box_norme_basique;
                 position: relative;
-                left: -20px;
+                left: -40px;
                 background-color: map-get($color-family, violet);
                 border-radius: 10px;
                 width: 20px;

@@ -1,6 +1,49 @@
 .restaurants{
     @include sextion_style;
     background-color: darken(map-get($color-family,white), 4%);
-       
-}
+    padding-bottom: 50px;
+       &__Titre{
+           @include format_titre;
+           position: static;
+       }
+       &__lien_resto{
+           @include result;
+           padding:0%;
+           margin:10px;
+           border-radius: 20px;
+           
+           &__resultat_contenant_pic{
+               display: block;
+               @include box_norme_basique;
+               height: 150px;
+               
+               
+           }
+           &__titre_photo{
+               @include direction-desktop;
+               margin: 0%;
+               padding-left: 10px;
+               padding-right: 10px;
+               height: 80px;
+               background-color: white;
+               position: static;
+               justify-content: space-between;
+               align-items:center;
+               border-radius: 0px 0px 20px 20px;
+               
+               
+           }
+       }
 
+}
+.photo{
+    @include box_norme_basique;
+    object-fit: cover;
+    width: 100%;
+    object-position: bottom;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+.nom_restau{
+    font-weight: bold;
+}
