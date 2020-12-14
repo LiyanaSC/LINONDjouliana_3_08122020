@@ -32,7 +32,7 @@
         }
         .btn{
            
-            background-color: map-get($color-family,pink);
+            background: linear-gradient(-5deg, map-get($color-family,violet), map-get($color-family,pink));
             border-radius: $arrondis;
             height: nth($btn-heigt,1);   
             box-shadow: $shadow;
