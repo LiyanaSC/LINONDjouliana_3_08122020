@@ -1,37 +1,51 @@
 
 body
 {
-    @include direction-mobile;
-    @include semantique_norme_basique;
-    height: 100%;
+    @include direction_vertical;
+    @include centrer;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include hauteur_100;
     
 }
 .header_principal
 {
-    @include semantique_norme_basique;
+    display: flex;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
     box-shadow: $shadow;
     padding-top: 15px;
     position: relative;
     height: 70px;
+    align-items: center;
+    margin: auto;
+
 
 }
-
+.logo{
+    font-family: $font-family-logo;
+    margin: auto;
+    
+}
 main
 {
-    @include semantique_norme_basique;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
 
 }
 
 
 section
 {
-    @include semantique_norme_basique;
-    @include direction-mobile;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include direction_vertical;
+    @include centrer;
     
 }
 footer{
-    width: 100%;
-    background-color: darken(map-get($color-family,white), 85%);
+    @include largeur_100;
+    background-color: darken(white, 85%);
     color: white;
     
         >.liens_divers{

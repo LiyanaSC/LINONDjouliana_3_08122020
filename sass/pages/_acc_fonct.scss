@@ -1,25 +1,26 @@
 .fonctionnement{
-    @include sextion_style;
+    @include direction_vertical;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include centrer;
+    font-family: $font-family-txt;
     background-color: white;
         &__Titre{
             @include format_titre;
 
         }
         &__guide{
-           display: flex; 
-           justify-content: baseline;
-           @include box_norme_flottant;
-           width: 80%;
+           @include boite_format_rectangle_arrondis_léger;
            background-color: darken(map-get($color-family,white), 2%);
             &__number{
                 display: inline-block;
-                @include box_norme_basique;
+                @include box_remplissage_sans_espace;
+                @include txt-center;
                 position: relative;
                 left: -40px;
                 background-color: map-get($color-family, violet);
                 border-radius: 10px;
                 width: 20px;
-                text-align: center;
                 color: white;
                 
             }

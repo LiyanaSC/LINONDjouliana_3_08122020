@@ -1,6 +1,10 @@
 .restaurants{
-    @include sextion_style;
-    background-color: darken(map-get($color-family,white), 4%);
+    @include direction_vertical;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include centrer;
+    font-family: $font-family-txt;
+    background-color: darken(white, 4%);
     padding-bottom: 50px;
        &__Titre{
            @include format_titre;
@@ -14,13 +18,13 @@
            
            &__resultat_contenant_pic{
                display: block;
-               @include box_norme_basique;
+               @include box_remplissage_sans_espace;
                height: 150px;
                
                
            }
            &__titre_photo{
-               @include direction-desktop;
+               @include direction_horizontal;
                margin: 0%;
                padding-left: 10px;
                padding-right: 10px;
@@ -37,12 +41,12 @@
 
 }
 .photo{
-    @include box_norme_basique;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
     object-fit: cover;
-    width: 100%;
     object-position: bottom;
     height: 150px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: $square_rounded;
 }
 .nom_restau{
     font-weight: bold;

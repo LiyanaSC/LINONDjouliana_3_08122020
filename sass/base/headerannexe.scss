@@ -1,18 +1,14 @@
 
 .retour_accueil{
-    @include direction-desktop;
+    @include direction_horizontal;
+
   
 }
 .header_annexes{
-     @include semantique_norme_basique;
-    width: 100%;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
     display: flex;
     justify-content: flex-start;
-    background-color: map-get($color-family,white);
+    background-color: white;
 
-}
-.logo{
-    font-family: $font-family-logo;
-    margin: auto;
-    
 }
