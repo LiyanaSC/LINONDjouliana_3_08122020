@@ -1,4 +1,8 @@
 
+.retour_accueil{
+    @include direction-desktop;
+  
+}
 .header_annexes{
      @include semantique_norme_basique;
     width: 100%;
@@ -8,7 +12,6 @@
 
 }
 .logo{
-    display: flex;
     font-family: $font-family-logo;
     margin: auto;
     

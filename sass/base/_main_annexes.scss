@@ -32,18 +32,24 @@
 .menu{
     @include sextion_style;
     background-color: darken(map-get($color-family,white), 4%);
-    &__Titre{
-            @include format_titre;
+    &__titre{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-bottom: 3px;
+
+            &__line{
+                    margin: 10px;
+                    height: 3px;
+                    width: 40px;
+                    background-color: map-get($color-family, green);
+                    margin-left: 20px;
+                    margin-top: 0%;
 
         }
-    &__line{
-       
-        height: 5px;
-        width: 10%;
-        background-color: map-get($color-family, green);
-        position: relative;
-        left: -230px;
-       
+    
+      
     }
     &__guide{
         display: flex; 
@@ -51,7 +57,39 @@
         @include box_norme_flottant;
         width: 90%;
         background-color: white;
-        
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 70px;
+        margin: 10px;
+        &--text_style{
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 1.1rem;
+            padding-bottom: 0%;
+            word-break: break-word;
+
+        }
+      
+             
     }
+}
+
+.btn{
+           
+    background: linear-gradient(-5deg, map-get($color-family,violet), map-get($color-family,pink));
+    border-radius: $arrondis;
+    height: nth($btn-heigt,1);   
+    box-shadow: $shadow;
+    text-align: center;
+    width: 40%;
+    margin: 50px;
+    
+
+        &--cliquable{
+            @include boite_cliquable;
+            color: white;
+            padding: auto;
+        }
+
 }
 
