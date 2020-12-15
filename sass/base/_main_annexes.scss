@@ -1,0 +1,99 @@
+.header_section{
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+
+    &_entete_resto{
+        @include box_remplissage_sans_espace;
+        @include largeur_100;
+        height: 220px;
+        
+        &__photo{
+            @include largeur_100;
+            position: static;
+            height: nth($pixel_size,3)*10;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    &_entete_nom_restau{
+        @include direction_horizontal;
+        @include largeur_100;
+        background-color: $color_background_ligth;
+        position: relative;
+        margin: 0%;
+        font-family: $font-family-logo;
+        min-height: nth($pixel_size,8);
+        font-size: nth($text-sizes,2);
+        border-radius: $arrondis_superieur_nom_resto;
+        justify-content: space-between;
+        
+        @media (min-width: 900px) {
+            justify-content: center;
+            
+           
+    }
+    }
+}
+
+.menu{
+    @include direction_vertical;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include centrer;
+    font-family: $font-family-txt;
+    background-color: $color_background_ligth;
+    &__titre{
+            @include largeur_100;
+            @include direction_vertical;
+            justify-content: flex-start;
+            margin-bottom: 3px;
+
+            &__line{
+                    margin: nth($pixel_size,1);
+                    height: 3px;
+                    width: nth($pixel_size,4);
+                    background-color: map-get($color-family,third_color);
+                    margin-left: nth($pixel_size,2);
+                    margin-top: 0%;
+
+        }
+    
+      
+    }
+    &__resultat{
+        @include largeur_100;
+        @include box_remplissage_sans_espace;
+        @include direction_vertical;
+        @include centrer;
+        justify-content: center;
+        @include breackpoint_desktop;
+        
+    }
+    &__guide{
+        @include direction_horizontal;
+        @include boite_format_rectangle_arrondis_léger;
+        background-color: $color_background_bleach;
+        justify-content: space-between;
+        min-height: nth($pixel_size,7);
+        margin: nth($pixel_size,1);
+        display: flex;
+        @include centrer;
+        @include breackpoint_element_adapt;
+        @include breackpoint_contenu_column;
+
+        &--text_style{
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 1.1rem;
+            padding-bottom: 0%;
+            word-break: break-word;
+            
+
+        }
+      
+             
+    }
+}
+
+
+

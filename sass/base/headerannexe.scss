@@ -1,0 +1,14 @@
+
+.retour_accueil{
+    @include direction_horizontal;
+
+  
+}
+.header_annexes{
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $color_background_bleach;
+
+}

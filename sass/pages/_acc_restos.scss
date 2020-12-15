@@ -1,0 +1,53 @@
+.restaurants{
+    @include direction_vertical;
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include centrer;
+    font-family: $font-family-txt;
+    background-color: $color_background_ligth;
+    padding-bottom: nth($pixel_size,5);
+       &__Titre{
+           @include format_titre;
+           position: static;
+       }
+       &__lien_resto{
+           @include result;
+           padding:0%;
+           margin:nth($pixel_size,1);
+           border-radius: $arrondis_lege;
+           
+           &__resultat_contenant_pic{
+               display: block;
+               @include box_remplissage_sans_espace;
+               height: nth($pixel_size,1)*15;
+               
+               
+           }
+           &__titre_photo{
+               @include direction_horizontal;
+               margin: 0%;
+               padding-left: nth($pixel_size,1);
+               padding-right: nth($pixel_size,1);
+               height: nth($pixel_size,8);
+               background-color: $color_background_bleach;
+               position: static;
+               justify-content: space-between;
+               align-items:center;
+               border-radius: $arrondis_inferieur;
+               
+               
+           }
+       }
+
+}
+.photo{
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    object-fit: cover;
+    object-position: bottom;
+    height: nth($pixel_size,1)*15;
+    border-radius: $arrondis_seperieur;
+}
+.nom_restau{
+    font-weight: bold;
+}
