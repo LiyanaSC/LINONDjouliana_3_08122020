@@ -1,14 +1,14 @@
 a{
     text-decoration: none;
-    color: black;
+    color: $text_color_dark;
    }
 .fas{
-    margin: 10px;
+    margin: nth($pixel_size,1);
 }
 h1{
     justify-content: center;
 }
 p{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: nth($pixel_size,2);
+    margin-right: nth($pixel_size,2);
 }

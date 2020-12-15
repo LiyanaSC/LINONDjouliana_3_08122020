@@ -15,17 +15,21 @@
             @include largeur_100;
             background-color: darken(white,9%);
             display: block;
-            min-height: 50px;
+            min-height: nth($pixel_size,5);
 
         }
         &__description{
             display: block;
             margin: 0%;
-            padding: 30px; 
+            padding-top: nth($pixel_size,3);
+            padding-left: nth($pixel_size,3);
+            padding-right: nth($pixel_size,3); 
+            
             @include txt-center;
             word-break: break-word;
             font-size: nth($text-sizes,1);
             font-weight: lighter;
+            
            
                 &--bold{
                     display: block;
@@ -37,20 +41,23 @@
 }
 .btn{
            
-    background: linear-gradient(-5deg, map-get($color-family,violet), map-get($color-family,pink));
-    border-radius: $arrondis;
-    height: nth($btn-heigt,1);   
+    background: linear-gradient(-5deg, map-get($color-family,first_color), map-get($color-family,second_color));
+    border-radius: $arrondis_prononce;
+    height: nth($pixel_size,5);   
     box-shadow: $shadow;
     @include txt-center;
-    width: 60%;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    width: 50%;
+    margin-bottom: nth($pixel_size,6);
+    margin-top: nth($pixel_size,6);
 
         &--cliquable{
             @include box_remplissage_sans_espace;
             @include hauteur_100;
             @include largeur_100;
-            color: white;
+            color: $text_color_light;
+            display: flex;
+            justify-content: center;
+            @include centrer;
             
         }
 

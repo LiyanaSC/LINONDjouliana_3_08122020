@@ -2,16 +2,28 @@
 $font-family-logo: 'Shrikhand', cursive;
 $font-family-txt: 'Roboto', sans-serif;
 $shadow: 0px 5px 10px rgb(197, 196, 196);
-$arrondis: 25px;
-$square_rounded: 20px;
+$arrondis_prononce:25px;
+$arrondis_lege:20px;
+$arrondis_superieur_nom_resto:60px 60px 0px 0px;
+$arrondis_seperieur:20px 20px 0px 0px;
+$arrondis_inferieur:0px 0px 20px 20px;
+$cercle_petit:10px;
+$color_background_dark: darken(white, 85%);
+$color_background_ligth: darken(white, 4%);
+$color_background_bleach: white;
+$text_color_dark: black;
+$text_color_light: white;
+
+
 
 //listes
 $text-sizes: 1rem, 2rem, 3rem;
-$btn-heigt: 50px, 70px;
+$pixel_size: 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px;
 
 //maps
-$color-family: (violet:#9356DC, pink:#FF79DA, green:#99E2D0, white:#fff);
-//$arrondis: (arrondis:)
+$color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, fourth_color:#fff);
+
+//$arrondis: ( ,  , );
 
 //mixins
 @mixin box_remplissage_sans_espace {
@@ -41,11 +53,11 @@ $color-family: (violet:#9356DC, pink:#FF79DA, green:#99E2D0, white:#fff);
 
 @mixin boite_format_rectangle_arrondis_léger {
     
-    border-radius: $square_rounded;
+    border-radius: $arrondis_lege;
     margin: 20px;
     padding: 10px;
     box-shadow: $shadow;
-    width: 90%;
+    width: 85%;
 }
 
 @mixin txt-center {

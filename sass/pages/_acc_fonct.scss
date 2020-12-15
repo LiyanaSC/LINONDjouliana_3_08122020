@@ -4,24 +4,24 @@
     @include largeur_100;
     @include centrer;
     font-family: $font-family-txt;
-    background-color: white;
+    background-color: $color_background_bleach;
         &__Titre{
             @include format_titre;
 
         }
         &__guide{
            @include boite_format_rectangle_arrondis_léger;
-           background-color: darken(map-get($color-family,white), 2%);
+           background-color: $color_background_ligth;
             &__number{
                 display: inline-block;
                 @include box_remplissage_sans_espace;
                 @include txt-center;
                 position: relative;
                 left: -40px;
-                background-color: map-get($color-family, violet);
-                border-radius: 10px;
-                width: 20px;
-                color: white;
+                background-color: map-get($color-family, first_color);
+                border-radius: $cercle_petit;
+                width: nth($pixel_size,2);
+                color: $text_color_light;
                 
             }
         }

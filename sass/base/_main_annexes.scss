@@ -10,7 +10,7 @@
         &__photo{
             @include largeur_100;
             position: static;
-            height: 300px;
+            height: nth($pixel_size,3)*10;
             object-fit: cover;
             object-position: top;
         }
@@ -18,14 +18,13 @@
     &_entete_nom_restau{
         @include direction_horizontal;
         @include largeur_100;
-        background-color: darken(white, 4%);
-        display: inline-block;
+        background-color: $color_background_ligth;
         position: relative;
         margin: 0%;
         font-family: $font-family-logo;
-        height: 80px;
+        height: nth($pixel_size,8);
         font-size: nth($text-sizes,2);
-        border-radius: 60px 60px 0px 0px;
+        border-radius: $arrondis_superieur_nom_resto;
         justify-content: space-between;
     }
 }
@@ -36,7 +35,7 @@
     @include largeur_100;
     @include centrer;
     font-family: $font-family-txt;
-    background-color: darken(map-get($color-family,white), 4%);
+    background-color: $color_background_ligth;
     &__titre{
             @include largeur_100;
             @include direction_vertical;
@@ -44,11 +43,11 @@
             margin-bottom: 3px;
 
             &__line{
-                    margin: 10px;
+                    margin: nth($pixel_size,1);
                     height: 3px;
-                    width: 40px;
-                    background-color: map-get($color-family, green);
-                    margin-left: 20px;
+                    width: nth($pixel_size,4);
+                    background-color: map-get($color-family,third_color);
+                    margin-left: nth($pixel_size,2);
                     margin-top: 0%;
 
         }
@@ -58,10 +57,10 @@
     &__guide{
         @include direction_horizontal;
         @include boite_format_rectangle_arrondis_léger;
-        background-color: white;
+        background-color: $color_background_bleach;
         justify-content: space-between;
-        max-height: 70px;
-        margin: 10px;
+        max-height: nth($pixel_size,7);
+        margin: nth($pixel_size,1);
         &--text_style{
             font-weight: bold;
             line-height: 1.5;
