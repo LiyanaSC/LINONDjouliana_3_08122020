@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +18,23 @@
 
     <main>
 
-        <section class="recherche">  
+        <form method="get" class="recherche">  
+            
 
-
-            <div class="recherche__localisation"> <p><i class="fas fa-map-marker-alt"> </i> Paris, Belleville</p></div>
+            <div class="recherche__localisation"> 
+                <i class="fas fa-map-marker-alt"> </i>
+                <input type="search" id="localisation_client" name="search" aria-label="Search through site content" placeholder="Paris, Belleville">
+            </div>
 
             <p class="recherche__description"><span class="recherche__description--bold">Réservez le menu qui vous convient</span><br/> Dévouvrez des restaurants d'exceptions, sélectionnés par nos soins</p> 
 
-            <div class="btn"><a href="#" class="btn--cliquable"><p>Explorez nos restaurants</p></a></div>
+            <button id="btn_search" class="btn"><a href="#" class="btn--cliquable"><p>Explorez nos restaurants</p></a></button>
             
-        </section>
+        </form>
 
         <aside class="fonctionnement">
 
+            <div class="menu__resultat">
             <h2 class="fonctionnement__Titre">Fonctionnement</h2>
             
             <div class="fonctionnement__guide"><p><span class="fonctionnement__guide__number">1</span> <i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p></div>
@@ -38,13 +42,13 @@
             <div class="fonctionnement__guide"><p><span class="fonctionnement__guide__number">2</span> <i class="fas fa-list"></i>Composez votre menu</p></div>
             
             <div class="fonctionnement__guide"><p><span class="fonctionnement__guide__number">3</span> <i class="fas fa-store"></i>Dégustez au restaurant</p></div>
-
+        </div>
         </aside>
 
         <section class="restaurants">
 
             <h2 class="restaurants__Titre">Restaurant</h2>
-
+            <div class="menu__resultat">
             <a href="menulpdg.html" class="restaurants__lien_resto"> 
                 <p class="restaurants__lien_resto__resultat_contenant_pic"><img src="./pics/lpdg.jpg" alt="photo du restaurant la palette" class="photo"/></p>
                 
@@ -69,7 +73,7 @@
                 <div  class="restaurants__lien_resto__titre_photo"><p> <span class="nom_restau">Le délice des sens</span> <br/> Folie-Méricourt </p> <div><i class="far fa-heart"></i></div></div>
             </a>
 
-
+        </div>
 
         </section>
 

@@ -79,4 +79,34 @@ $color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, 
     box-shadow: $shadow;
     
 }
+@mixin breackpoint_desktop {
+    @media (min-width: 900px) {
+        @include direction_horizontal;
+}
+}
+
+@mixin breackpoint_element_adapt {
+    @media (min-width: 900px) {
+       min-width: 20%;
+        max-width: 30%;
+       height: 160px;
+}
+}
+@mixin breackpoint_contenu_column {
+    @media (min-width: 900px) {
+        @include direction_vertical;
+        text-align: center;
+}
+}
+@mixin heiht_100_mediaquery {
+    @media (min-width: 900px) {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        background-color: $color_background_ligth;
+}
+    
+}
 //boucles

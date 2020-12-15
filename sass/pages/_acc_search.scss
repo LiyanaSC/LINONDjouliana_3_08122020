@@ -7,6 +7,12 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: darken(white, 4%);
+    @include breackpoint_desktop;
+    @media (min-width: 900px) {
+        min-height: 200px;
+     }
+
+    
     
         &__localisation
         {
@@ -16,6 +22,19 @@
             background-color: darken(white,9%);
             display: block;
             min-height: nth($pixel_size,5);
+            @media (min-width: 900px) {
+                background-color: $color_background_bleach;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                margin: 50px;
+                    
+                    border-radius: $arrondis_prononce;
+                    box-shadow: $shadow;
+            
+        }
+            
 
         }
         &__description{
@@ -39,6 +58,23 @@
         }
 
 }
+#localisation_client{
+    @include box_remplissage_sans_espace;
+    border: none;
+    background: transparent;
+    font-size: nth($text-sizes,1);
+    height: nth($pixel_size,5);
+    width: nth($pixel_size,1)*15;
+   
+    
+    &::placeholder 
+    { 
+      color: black;
+      opacity: 1;     
+     }
+
+}
+
 .btn{
            
     background: linear-gradient(-5deg, map-get($color-family,first_color), map-get($color-family,second_color));
@@ -49,6 +85,14 @@
     width: 50%;
     margin-bottom: nth($pixel_size,6);
     margin-top: nth($pixel_size,6);
+    border: none ;
+    @media (min-width: 900px) {
+        width: 300px;
+        
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
 
         &--cliquable{
             @include box_remplissage_sans_espace;
@@ -58,6 +102,7 @@
             display: flex;
             justify-content: center;
             @include centrer;
+            font-size: nth($text-sizes,1);
             
         }
 

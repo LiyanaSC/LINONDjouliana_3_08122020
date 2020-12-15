@@ -106,10 +106,15 @@ p {
   position: relative;
   margin: 0%;
   font-family: "Shrikhand", cursive;
-  height: 80px;
+  min-height: 80px;
   font-size: 2rem;
   border-radius: 60px 60px 0px 0px;
   justify-content: space-between;
+}
+@media (min-width: 900px) {
+  .header_section_entete_nom_restau {
+    justify-content: center;
+  }
 }
 
 .menu {
@@ -137,6 +142,21 @@ p {
   margin-left: 20px;
   margin-top: 0%;
 }
+.menu__resultat {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .menu__resultat {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .menu__guide {
   display: flex;
   flex-direction: row;
@@ -147,8 +167,24 @@ p {
   width: 85%;
   background-color: white;
   justify-content: space-between;
-  max-height: 70px;
+  min-height: 70px;
   margin: 10px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .menu__guide {
+    min-width: 20%;
+    max-width: 30%;
+    height: 160px;
+  }
+}
+@media (min-width: 900px) {
+  .menu__guide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .menu__guide--text_style {
   font-weight: bold;
@@ -168,6 +204,17 @@ p {
   font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
 }
+@media (min-width: 900px) {
+  .recherche {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 900px) {
+  .recherche {
+    min-height: 200px;
+  }
+}
 .recherche__localisation {
   padding: 0%;
   margin: 0%;
@@ -176,6 +223,18 @@ p {
   background-color: #e8e8e8;
   display: block;
   min-height: 50px;
+}
+@media (min-width: 900px) {
+  .recherche__localisation {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px #c5c4c4;
+  }
 }
 .recherche__description {
   display: block;
@@ -194,6 +253,20 @@ p {
   font-size: 2rem;
 }
 
+#localisation_client {
+  padding: 0%;
+  margin: 0%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  height: 50px;
+  width: 150px;
+}
+#localisation_client::placeholder {
+  color: black;
+  opacity: 1;
+}
+
 .btn {
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
   border-radius: 25px;
@@ -203,6 +276,15 @@ p {
   width: 50%;
   margin-bottom: 60px;
   margin-top: 60px;
+  border: none;
+}
+@media (min-width: 900px) {
+  .btn {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .btn--cliquable {
   padding: 0%;
@@ -213,6 +295,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
 }
 
 .fonctionnement {
