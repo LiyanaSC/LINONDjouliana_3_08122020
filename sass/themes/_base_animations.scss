@@ -1,0 +1,30 @@
+.heart_not_checked{
+    color: black;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+     &:hover{
+         &>.progress{
+            transform: scaleX(1);
+         }
+     }
+ 
+
+}
+.heart_checked{
+    color: $degrade;
+  
+    position: absolute;
+   top: -10px;
+   left: -10px; 
+    z-index: 2;
+
+}
+.progress{
+    overflow: hidden;
+    @include largeur_100;
+    @include hauteur_100;
+    transform-origin: 50% 0%;
+    transform: scaleX(0);
+    transition: transform 1000ms; 
+}

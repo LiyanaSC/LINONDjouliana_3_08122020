@@ -1,13 +1,14 @@
 
 body
 {
+    position: absolute;
     @include direction_vertical;
-    @include centrer;
-    @include box_remplissage_sans_espace;
     @include largeur_100;
     @include hauteur_100;
+    margin: 0%;
     background-color: $color_background_ligth;
-    
+  
+
 }
 .header_principal
 {

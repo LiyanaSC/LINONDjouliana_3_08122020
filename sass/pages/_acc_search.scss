@@ -77,7 +77,7 @@
 
 .btn{
            
-    background: linear-gradient(-5deg, map-get($color-family,first_color), map-get($color-family,second_color));
+    background: $degrade;
     border-radius: $arrondis_prononce;
     height: nth($pixel_size,5);   
     box-shadow: $shadow;
