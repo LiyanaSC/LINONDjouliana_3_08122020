@@ -314,6 +314,7 @@ p {
 #localisation_client::placeholder {
   color: black;
   opacity: 1;
+  text-align: center;
 }
 
 .btn {
