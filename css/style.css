@@ -588,4 +588,33 @@ p {
   animation-iteration-count: 1;
 }
 
+@keyframes flash_icon {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #9356DC;
+  }
+  100% {
+    color: black;
+  }
+}
+.icon_color1 {
+  animation: flash_icon 2000ms backwards;
+  animation-delay: 2000ms;
+  animation-iteration-count: 1;
+}
+
+.icon_color2 {
+  animation: flash_icon 2000ms backwards;
+  animation-delay: 4000ms;
+  animation-iteration-count: 1;
+}
+
+.icon_color3 {
+  animation: flash_icon 2000ms backwards;
+  animation-delay: 6000ms;
+  animation-iteration-count: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
