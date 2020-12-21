@@ -15,6 +15,7 @@ body {
   position: relative;
   min-height: 70px;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -392,6 +393,20 @@ p {
   color: white;
 }
 
+.fond_clignotant {
+  margin: 0%;
+  padding: 0%;
+  opacity: 0;
+  background-color: #f2eafb;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #c5c4c4;
+  width: 85%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -419,6 +434,14 @@ p {
   padding: 0%;
   margin: 10px;
   border-radius: 20px;
+  position: relative;
+}
+.restaurants__lien_resto__new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 10px;
+  right: 0;
 }
 .restaurants__lien_resto__resultat_contenant_pic {
   display: block;
@@ -529,6 +552,35 @@ p {
 .appear4 {
   animation: appearance 1000ms both;
   animation-delay: 800ms;
+}
+
+@keyframes flash {
+  0% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: #e9ddf8;
+  }
+  100% {
+    background-color: whitesmoke;
+  }
+}
+.clignotant1 {
+  animation: flash 2000ms backwards;
+  animation-delay: 2000ms;
+  animation-iteration-count: 1;
+}
+
+.clignotant2 {
+  animation: flash 2000ms backwards;
+  animation-delay: 4000ms;
+  animation-iteration-count: 1;
+}
+
+.clignotant3 {
+  animation: flash 2000ms backwards;
+  animation-delay: 6000ms;
+  animation-iteration-count: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

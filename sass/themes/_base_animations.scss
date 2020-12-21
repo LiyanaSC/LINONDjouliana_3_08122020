@@ -63,4 +63,26 @@
 }
 
 
+@keyframes flash {
+    0%{
+        background-color: $color_background_ligth;
+    }
+    50%{
+        background-color: lighten(map-get($color-family, first_color), 32%);
+    }
+  
+    100%{
+        background-color: $color_background_ligth;
+    }
 
+}
+
+@for $c from 1 to 4 {
+    .clignotant#{$c} {
+        animation: flash 2000ms backwards;
+        animation-delay: 2000ms*$c;
+        animation-iteration-count: 1;
+        
+    }
+    
+}

@@ -17,6 +17,8 @@
            display: flex;
            align-items: center;
            
+           
+           
             &__number{
                 display: inline-block;
                 @include box_remplissage_sans_espace;
@@ -32,4 +34,17 @@
 
             
         }
+}
+
+.fond_clignotant{
+    margin:0%;
+    padding:0%;
+    opacity: 0;
+    
+    background-color: lighten(map-get($color-family, first_color), 35%);
+    @include boite_format_rectangle_arrondis_leger;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
