@@ -516,9 +516,13 @@ p {
   padding: 0%;
   margin-right: 20px;
   transform: scale(1.5, 2);
+  transition: transform 800ms;
+}
+.heart_not_checked:hover {
+  transform: scale(1.5, 1.9);
 }
 .heart_not_checked:hover > .heart_checked {
-  transform: scale(1.04);
+  transform: scale(1.1, 1.1);
 }
 
 @keyframes appearance {

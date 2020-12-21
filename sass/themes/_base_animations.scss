@@ -27,11 +27,12 @@
     margin-right: 20px;
     
     transform: scale(1.5,2);
-    
+    transition: transform 800ms;
      &:hover{
+    transform: scale(1.5,1.9);
 
       > .heart_checked{
-          transform: scale(1.04);
+          transform: scale(1.1,1.1);
          }
     }
  
