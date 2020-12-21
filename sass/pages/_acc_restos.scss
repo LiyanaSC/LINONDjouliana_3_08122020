@@ -5,10 +5,12 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_ligth;
-    padding-bottom: nth($pixel_size,5);
+    //padding-bottom: nth($pixel_size,5);
        &__Titre{
            @include format_titre;
            position: static;
+           margin-top: nth($pixel_size ,4);
+           margin-bottom: nth($pixel_size ,2);
        }
        &__lien_resto{
            @include result;
@@ -26,8 +28,8 @@
            &__titre_photo{
                @include direction_horizontal;
                margin: 0%;
-               padding-left: nth($pixel_size,1);
-               padding-right: nth($pixel_size,1);
+              // padding-left: nth($pixel_size,1);
+             //  padding-right: nth($pixel_size,1);
                height: nth($pixel_size,8);
                background-color: $color_background_bleach;
                position: static;
@@ -51,4 +53,5 @@
 }
 .nom_restau{
     font-weight: bold;
+    
 }

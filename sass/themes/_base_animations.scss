@@ -1,30 +1,66 @@
+//les coeurs
+.heart_checked{
+    color:  #9356DC;
+  
+    position: absolute;
+   top: 0px;
+   left: 0px; 
+
+    z-index: 1;
+   height: 100%;
+   width: 100%;
+   margin-right: 20px;
+   padding: 0%;
+
+
+   transform:  scale(0);
+   transition: transform 400ms;
+   animation-fill-mode: forwards;
+
+}
+
 .heart_not_checked{
     color: black;
-    overflow: hidden;
     position: relative;
-    z-index: 3;
+    z-index: 2;
+    padding: 0%;
+    margin-right: 20px;
+    
+    transform: scale(1.5,2);
+    
      &:hover{
-         &>.progress{
-            transform: scaleX(1);
+
+      > .heart_checked{
+          transform: scale(1.04);
          }
-     }
+    }
  
 
 }
-.heart_checked{
-    color: $degrade;
-  
-    position: absolute;
-   top: -10px;
-   left: -10px; 
-    z-index: 2;
+//les apparitions de boites
+@keyframes appearance {
+    0% {
+        transform: translate(0%, 100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+@for $i from 1 to 5 {
+    .appear#{$i} {
+        animation: appearance 1000ms both;
+        animation-delay: 200ms*$i;
+        
+        
+    }
 
 }
-.progress{
-    overflow: hidden;
-    @include largeur_100;
-    @include hauteur_100;
-    transform-origin: 50% 0%;
-    transform: scaleX(0);
-    transition: transform 1000ms; 
-}
+
+
+

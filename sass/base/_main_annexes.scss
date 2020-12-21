@@ -26,14 +26,67 @@
         font-size: nth($text-sizes,2);
         border-radius: $arrondis_superieur_nom_resto;
         justify-content: space-between;
-        
         @media (min-width: 900px) {
-            justify-content: center;
-            
-           
-    }
+            justify-content: center;      
+       }
+       &--margin{
+           margin: nth($text-sizes,2); 
+
+       }
     }
 }
+//validation du choix de menu
+.validation{
+   
+    @include box_remplissage_sans_espace;
+    display: flex;
+    width: 0%;
+    max-height: 260px;
+    background-color: map-get($color-family, third_color);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    position:relative;
+   transform: translate(100%) ;
+   
+    transition: all 400ms;
+    
+}
+.fa-check-circle{
+   
+    transform: rotate(0.5turn) translate(-100%);
+    
+    transform-origin: top;
+    transition: all 400ms;
+
+}
+.animated_text{
+    @include box_remplissage_sans_espace;
+    @include largeur_100;
+    @include hauteur_100;
+    
+    @include direction_horizontal;
+    justify-content: space-between;
+    width: 100%;
+    transition: width 400ms;
+    
+            &:hover { 
+            width: 80%;
+                +.validation {
+                transform: translate(0%);
+                    width: 21%;
+                    >.fa-check-circle {
+                    transform: rotate(1turn) translate(0%);
+                    }
+                    
+                }
+                
+
+            }
+        
+    }
+    
 
 .menu{
     @include direction_vertical;
@@ -47,6 +100,8 @@
             @include direction_vertical;
             justify-content: flex-start;
             margin-bottom: 3px;
+            margin-left: nth($pixel_size,2);
+            margin-top:nth($pixel_size,2);
 
             &__line{
                     margin: nth($pixel_size,1);
@@ -70,30 +125,46 @@
         
     }
     &__guide{
+
         @include direction_horizontal;
-        @include boite_format_rectangle_arrondis_léger;
+        @include boite_format_rectangle_arrondis_leger;
+        @include box_remplissage_sans_espace;
         background-color: $color_background_bleach;
         justify-content: space-between;
-        min-height: nth($pixel_size,7);
+        height: nth($pixel_size,8);
         margin: nth($pixel_size,1);
-        display: flex;
-        @include centrer;
+        overflow: hidden;
+        
+       // position: relative;
+       
+        
+       
+       
+        justify-content: baseline;
+        
         @include breackpoint_element_adapt;
         @include breackpoint_contenu_column;
+  //      &:hover > .validation {
+  //          transform: translate(0);
+            //       }
+    
+        &--style_ellipsis{
+            text-overflow: ellipsis;
+        white-space:nowrap;
+         overflow: hidden;
+         margin-left: 10px;
 
+     
+        }
         &--text_style{
             font-weight: bold;
             line-height: 1.5;
             font-size: 1.1rem;
             padding-bottom: 0%;
-            word-break: break-word;
-            
-
         }
       
              
     }
 }
-
 
 

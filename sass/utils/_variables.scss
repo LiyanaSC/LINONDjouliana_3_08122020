@@ -52,11 +52,9 @@ $color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, 
     align-items: center;  
 }
 
-@mixin boite_format_rectangle_arrondis_léger {
+@mixin boite_format_rectangle_arrondis_leger {
     
     border-radius: $arrondis_lege;
-    margin: 20px;
-    padding: 10px;
     box-shadow: $shadow;
     width: 85%;
 }
@@ -69,7 +67,7 @@ $color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, 
 @mixin format_titre{
     margin: 0%;
     width: 100%;
-    padding: 30px;
+   // padding: 30px;
     text-indent: 30px;
     font-size: nth($text-sizes,2);
 }
@@ -100,4 +98,3 @@ $color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, 
 }
 }
 
-//boucles

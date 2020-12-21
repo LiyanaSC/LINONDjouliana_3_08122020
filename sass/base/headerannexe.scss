@@ -10,5 +10,9 @@
     display: flex;
     justify-content: flex-start;
     background-color: $color_background_bleach;
+    align-items: center;
+    &__logo{
+        margin: auto;
+    }
 
 }

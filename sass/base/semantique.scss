@@ -1,8 +1,7 @@
 
 body
 {
-    position: absolute;
-    @include direction_vertical;
+    
     @include largeur_100;
     @include hauteur_100;
     margin: 0%;
@@ -17,18 +16,13 @@ body
     @include largeur_100;
     background-color: $color_background_bleach;
     box-shadow: $shadow;
-    padding-top: nth($pixel_size,1)+5;
     position: relative;
-    height: nth($pixel_size,7);
+    min-height: 70px;
     align-items: center;
-    margin: auto;
-
 
 }
 .logo{
     font-family: $font-family-logo;
-    margin: auto;
-    
 }
 main
 {
@@ -51,6 +45,12 @@ footer{
     background-color: $color_background_dark;
     color: $text_color_light;
     margin-top: nth($pixel_size,1);
+
+        >.logo__footer{
+            margin-left:nth($pixel_size ,2);
+            color:white;
+            font-family: $font-family-logo;
+        }
     
         >.liens_divers{
             margin: 20px;
@@ -63,6 +63,6 @@ footer{
             display: block;
             line-height: 2;
             margin-top: nth($pixel_size,2);
-            padding-left: nth($pixel_size,2);
+           // padding-left: nth($pixel_size,2);
         }
 }

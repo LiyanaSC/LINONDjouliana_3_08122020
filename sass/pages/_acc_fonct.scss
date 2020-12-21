@@ -7,18 +7,22 @@
     background-color: $color_background_bleach;
         &__Titre{
             @include format_titre;
-
+            margin-top: nth($pixel_size ,4);
         }
         &__guide{
-           @include boite_format_rectangle_arrondis_léger;
+           @include boite_format_rectangle_arrondis_leger;
+           margin: 20px;
+           height: nth($pixel_size ,7);
            background-color: $color_background_ligth;
+           display: flex;
+           align-items: center;
            
             &__number{
                 display: inline-block;
                 @include box_remplissage_sans_espace;
                 @include txt-center;
                 position: relative;
-                left: -40px;
+                left: -20px;
                 background-color: map-get($color-family, first_color);
                 border-radius: $cercle_petit;
                 width: nth($pixel_size,2);
