@@ -46,10 +46,10 @@ footer{
     @include largeur_100;
     background-color: $color_background_dark;
     color: $text_color_light;
-    margin-top: nth($pixel_size,1);
+   padding: 20px ;
 
         >.logo__footer{
-            margin-left:nth($pixel_size ,2);
+            margin-left:nth($pixel_size ,3);
             color:white;
             font-family: $font-family-logo;
             @media (min-width: 900px){
@@ -58,7 +58,7 @@ footer{
         }
     
         >.liens_divers{
-            margin: 20px;
+            
             color: $text_color_light;
             font-family: $font-family-txt;
             line-height: 2;

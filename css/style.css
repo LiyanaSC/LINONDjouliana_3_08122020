@@ -44,10 +44,10 @@ footer {
   width: 100%;
   background-color: #262626;
   color: white;
-  margin-top: 10px;
+  padding: 20px;
 }
 footer > .logo__footer {
-  margin-left: 20px;
+  margin-left: 30px;
   color: white;
   font-family: "Shrikhand", cursive;
 }
@@ -57,7 +57,6 @@ footer > .logo__footer {
   }
 }
 footer > .liens_divers {
-  margin: 20px;
   color: white;
   font-family: "Roboto", sans-serif;
   line-height: 2;
@@ -539,6 +538,10 @@ p {
   transform: scale(0);
   transition: transform 400ms;
   animation-fill-mode: forwards;
+  background-color: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background-size: cover;
+  background-clip: text;
+  border: 1px red solid;
 }
 
 .heart_not_checked {
