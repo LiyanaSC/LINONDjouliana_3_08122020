@@ -16,11 +16,12 @@
    transform:  scale(0);
    transition: transform 400ms;
    animation-fill-mode: forwards;
-   background-color: $degrade;
-   background-size: cover;
+   background: $degrade;
    background-clip: text;
-   
-   border: 1px red solid;
+   -webkit-background-clip: text;
+    color: transparent;
+    border: transparent;
+  
 
 }
 

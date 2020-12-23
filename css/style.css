@@ -538,10 +538,11 @@ p {
   transform: scale(0);
   transition: transform 400ms;
   animation-fill-mode: forwards;
-  background-color: linear-gradient(-5deg, #9356DC, #FF79DA);
-  background-size: cover;
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
   background-clip: text;
-  border: 1px red solid;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: transparent;
 }
 
 .heart_not_checked {
