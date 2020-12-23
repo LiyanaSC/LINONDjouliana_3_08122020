@@ -26,13 +26,13 @@
         font-size: nth($text-sizes,2);
         border-radius: $arrondis_superieur_nom_resto;
         justify-content: space-between;
+        padding: nth($text-sizes,2);
         @media (min-width: 900px) {
             justify-content: center;      
        }
-       &--margin{
-           margin: nth($text-sizes,2); 
+    
 
-       }
+       
     }
 }
 //validation du choix de menu
@@ -115,13 +115,14 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_ligth;
+    padding:  nth($pixel_size,2);
     &__titre{
             @include largeur_100;
             @include direction_vertical;
             justify-content: flex-start;
             margin-bottom: 3px;
-            margin-left: nth($pixel_size,2);
-            margin-top:nth($pixel_size,2);
+            
+            
 
             &__line{
                     margin: nth($pixel_size,1);
@@ -130,6 +131,7 @@
                     background-color: map-get($color-family,third_color);
                     margin-left: nth($pixel_size,2);
                     margin-top: 0%;
+                   
 
         }
     
@@ -154,6 +156,7 @@
         height: nth($pixel_size,8);
         margin: nth($pixel_size,1);
         overflow: hidden;
+        
         
        // position: relative;
        
@@ -183,6 +186,7 @@
     white-space: normal;
     overflow: visible;
     text-align: left;
+    
         
         }
 
