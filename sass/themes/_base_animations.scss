@@ -6,7 +6,7 @@
    top: 0px;
    left: 0px; 
 
-    z-index: 1;
+    z-index: 3;
    height: 100%;
    width: 100%;
    margin-right: 20px;
@@ -22,7 +22,7 @@
 .heart_not_checked{
     color: black;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     padding: 0%;
     margin-right: 20px;
     
@@ -63,7 +63,7 @@
 
 }
 
-
+//le fonctionnement du site 
 @keyframes flash {
     0%{
         background-color: $color_background_ligth;
@@ -81,7 +81,7 @@
 
 }
 
-@for $c from 1 to 4 {
+@for $c from 1 to 7 {
     .clignotant#{$c} {
         animation: flash 2000ms backwards;
         animation-delay: 2000ms*$c;
@@ -110,12 +110,83 @@
 
 
 
-@for $c from 1 to 4 {
+@for $c from 1 to 7 {
     .icon_color#{$c} {
-        animation: flash_icon 2000ms backwards;
-        animation-delay: 2000ms*$c;
+        animation: flash_icon 2s backwards;
+        animation-delay: 2s*$c;
         animation-iteration-count: 1;
         
     }
     
+}
+
+//load spinner
+
+.chargement__fond{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include direction_vertical;
+    animation: disparait both;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    &__spinner{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-top: 8px map-get($color-family ,first_color) solid;
+        border-bottom: 8px map-get($color-family ,second_color) solid;
+        border-right: 8px map-get($color-family ,third_color) solid;
+        border-left: 8px white solid;
+        border-radius: 50%;
+        animation: loading linear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        
+    }
+    &__text{
+        margin: auto;
+        margin-top: 10px;
+        font-family: $font-family-logo;
+    }
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes disparait{
+    0%{
+        opacity: 1;
+        
+    }
+    20%{
+        opacity: 1;
+    
+        
+    }
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        
+        opacity: 0;
+        transform: scale(0);
+    }
 }

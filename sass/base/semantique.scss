@@ -51,6 +51,9 @@ footer{
             margin-left:nth($pixel_size ,2);
             color:white;
             font-family: $font-family-logo;
+            @media (min-width: 900px){
+               margin-right: 20px;
+            }
         }
     
         >.liens_divers{
@@ -65,5 +68,9 @@ footer{
             line-height: 2;
             margin-top: nth($pixel_size,2);
            // padding-left: nth($pixel_size,2);
+        }
+        @media (min-width: 900px){
+            display: flex;
+            justify-content: center;
         }
 }

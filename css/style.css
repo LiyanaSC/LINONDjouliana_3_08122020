@@ -48,6 +48,11 @@ footer > .logo__footer {
   color: white;
   font-family: "Shrikhand", cursive;
 }
+@media (min-width: 900px) {
+  footer > .logo__footer {
+    margin-right: 20px;
+  }
+}
 footer > .liens_divers {
   margin: 20px;
   color: white;
@@ -58,6 +63,12 @@ footer > h3 {
   display: block;
   line-height: 2;
   margin-top: 20px;
+}
+@media (min-width: 900px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 a {
@@ -132,9 +143,15 @@ p {
   transform: translate(100%);
   transition: all 400ms;
 }
+@media (min-width: 900px) {
+  .validation {
+    transform: translate(0%, 100%);
+  }
+}
 
 .fa-check-circle {
   transform: rotate(0.5turn) translate(-100%);
+  opacity: 0;
   transform-origin: top;
   transition: all 400ms;
 }
@@ -148,17 +165,31 @@ p {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  transition: width 400ms;
+  opacity: 1;
+  transition: all 400ms;
 }
 .animated_text:hover {
   width: 80%;
+}
+@media (min-width: 900px) {
+  .animated_text:hover {
+    width: 100%;
+    opacity: 0.6;
+  }
 }
 .animated_text:hover + .validation {
   transform: translate(0%);
   width: 21%;
 }
+@media (min-width: 900px) {
+  .animated_text:hover + .validation {
+    width: 100%;
+    height: 50%;
+  }
+}
 .animated_text:hover + .validation > .fa-check-circle {
   transform: rotate(1turn) translate(0%);
+  opacity: 1;
 }
 
 .menu {
@@ -232,11 +263,25 @@ p {
     text-align: center;
   }
 }
+@media (min-width: 900px) {
+  .menu__guide {
+    display: flex;
+    justify-content: center;
+    height: 110px;
+  }
+}
 .menu__guide--style_ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   margin-left: 10px;
+}
+@media (min-width: 900px) {
+  .menu__guide--style_ellipsis {
+    white-space: normal;
+    overflow: visible;
+    text-align: left;
+  }
 }
 .menu__guide--text_style {
   font-weight: bold;
@@ -394,20 +439,6 @@ p {
   color: white;
 }
 
-.fond_clignotant {
-  margin: 0%;
-  padding: 0%;
-  opacity: 0;
-  background-color: #f2eafb;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px #c5c4c4;
-  width: 85%;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -500,7 +531,7 @@ p {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 1;
+  z-index: 3;
   height: 100%;
   width: 100%;
   margin-right: 20px;
@@ -513,7 +544,7 @@ p {
 .heart_not_checked {
   color: black;
   position: relative;
-  z-index: 2;
+  z-index: 4;
   padding: 0%;
   margin-right: 20px;
   transform: scale(1.5, 2);
@@ -588,6 +619,24 @@ p {
   animation-iteration-count: 1;
 }
 
+.clignotant4 {
+  animation: flash 2000ms backwards;
+  animation-delay: 8000ms;
+  animation-iteration-count: 1;
+}
+
+.clignotant5 {
+  animation: flash 2000ms backwards;
+  animation-delay: 10000ms;
+  animation-iteration-count: 1;
+}
+
+.clignotant6 {
+  animation: flash 2000ms backwards;
+  animation-delay: 12000ms;
+  animation-iteration-count: 1;
+}
+
 @keyframes flash_icon {
   0% {
     color: black;
@@ -600,21 +649,102 @@ p {
   }
 }
 .icon_color1 {
-  animation: flash_icon 2000ms backwards;
-  animation-delay: 2000ms;
+  animation: flash_icon 2s backwards;
+  animation-delay: 2s;
   animation-iteration-count: 1;
 }
 
 .icon_color2 {
-  animation: flash_icon 2000ms backwards;
-  animation-delay: 4000ms;
+  animation: flash_icon 2s backwards;
+  animation-delay: 4s;
   animation-iteration-count: 1;
 }
 
 .icon_color3 {
-  animation: flash_icon 2000ms backwards;
-  animation-delay: 6000ms;
+  animation: flash_icon 2s backwards;
+  animation-delay: 6s;
   animation-iteration-count: 1;
+}
+
+.icon_color4 {
+  animation: flash_icon 2s backwards;
+  animation-delay: 8s;
+  animation-iteration-count: 1;
+}
+
+.icon_color5 {
+  animation: flash_icon 2s backwards;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+}
+
+.icon_color6 {
+  animation: flash_icon 2s backwards;
+  animation-delay: 12s;
+  animation-iteration-count: 1;
+}
+
+.chargement__fond {
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  animation: disparait both;
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+.chargement__fond__spinner {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-top: 8px #9356DC solid;
+  border-bottom: 8px #FF79DA solid;
+  border-right: 8px #99E2D0 solid;
+  border-left: 8px white solid;
+  border-radius: 50%;
+  animation: loading linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.chargement__fond__text {
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Shrikhand", cursive;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes disparait {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
