@@ -13,7 +13,6 @@ body {
   background-color: white;
   box-shadow: 0px 5px 10px #c5c4c4;
   position: relative;
-  min-height: 70px;
   align-items: center;
   justify-content: center;
 }
@@ -114,7 +113,7 @@ p {
   position: relative;
   margin: 0%;
   font-family: "Shrikhand", cursive;
-  min-height: 80px;
+  min-height: 50px;
   font-size: 2rem;
   border-radius: 60px 60px 0px 0px;
   justify-content: space-between;
@@ -531,7 +530,7 @@ p {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 3;
+  z-index: 1;
   height: 100%;
   width: 100%;
   margin-right: 20px;
@@ -544,7 +543,7 @@ p {
 .heart_not_checked {
   color: black;
   position: relative;
-  z-index: 4;
+  z-index: 2;
   padding: 0%;
   margin-right: 20px;
   transform: scale(1.5, 2);
@@ -687,7 +686,7 @@ p {
 .chargement__fond {
   background-color: white;
   position: fixed;
-  z-index: 1;
+  z-index: 9;
   top: 0;
   left: 0;
   bottom: 0;

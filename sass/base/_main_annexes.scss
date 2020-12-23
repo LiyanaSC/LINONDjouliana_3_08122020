@@ -6,7 +6,7 @@
         @include box_remplissage_sans_espace;
         @include largeur_100;
         height: 220px;
-        
+       
         &__photo{
             @include largeur_100;
             position: static;
@@ -22,7 +22,7 @@
         position: relative;
         margin: 0%;
         font-family: $font-family-logo;
-        min-height: nth($pixel_size,8);
+        min-height: nth($pixel_size,5);
         font-size: nth($text-sizes,2);
         border-radius: $arrondis_superieur_nom_resto;
         justify-content: space-between;
