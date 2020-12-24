@@ -47,13 +47,13 @@ footer {
   padding: 20px;
 }
 footer > .logo__footer {
-  margin-left: 30px;
   color: white;
   font-family: "Shrikhand", cursive;
 }
 @media (min-width: 900px) {
   footer > .logo__footer {
-    margin-right: 20px;
+    margin: 0;
+    padding: 0;
   }
 }
 footer > .liens_divers {
@@ -61,10 +61,10 @@ footer > .liens_divers {
   font-family: "Roboto", sans-serif;
   line-height: 2;
 }
-footer > h3 {
-  display: block;
-  line-height: 2;
-  margin-top: 20px;
+@media (min-width: 900px) {
+  footer > .liens_divers {
+    padding: 17px;
+  }
 }
 @media (min-width: 900px) {
   footer {
@@ -542,7 +542,6 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  border: transparent;
 }
 
 .heart_not_checked {
@@ -552,13 +551,15 @@ p {
   padding: 0%;
   margin-right: 20px;
   transform: scale(1.5, 2);
-  transition: transform 800ms;
+  transition: all 800ms;
+  overflow: hidden;
 }
 .heart_not_checked:hover {
-  transform: scale(1.5, 1.9);
+  transform: scale(1.4, 1.9);
+  color: transparent;
 }
 .heart_not_checked:hover > .heart_checked {
-  transform: scale(1.1, 1.1);
+  transform: scale(1, 1);
 }
 
 @keyframes appearance {

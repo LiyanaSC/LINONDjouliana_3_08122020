@@ -49,11 +49,13 @@ footer{
    padding: 20px ;
 
         >.logo__footer{
-            margin-left:nth($pixel_size ,3);
+            
             color:white;
             font-family: $font-family-logo;
             @media (min-width: 900px){
-               margin-right: 20px;
+                margin: 0;
+                padding: 0;
+              
             }
         }
     
@@ -63,13 +65,12 @@ footer{
             font-family: $font-family-txt;
             line-height: 2;
             
+            @media (min-width: 900px){
+               
+                padding: 17px;
+            }
         }
-        >h3{
-            display: block;
-            line-height: 2;
-            margin-top: nth($pixel_size,2);
-           
-        }
+        
         @media (min-width: 900px){
             display: flex;
             justify-content: center;
