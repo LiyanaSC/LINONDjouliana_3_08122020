@@ -308,6 +308,9 @@ p {
 @media (min-width: 900px) {
   .recherche {
     min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .recherche__localisation {
@@ -322,11 +325,7 @@ p {
 @media (min-width: 900px) {
   .recherche__localisation {
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 300px;
-    margin: 50px;
     border-radius: 25px;
     box-shadow: 0px 5px 10px #c5c4c4;
   }
@@ -381,9 +380,6 @@ p {
 @media (min-width: 900px) {
   .btn {
     width: 300px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
 }
 .btn--cliquable {

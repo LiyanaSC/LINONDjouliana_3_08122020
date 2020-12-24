@@ -10,6 +10,9 @@
     @include breackpoint_desktop;
     @media (min-width: 900px) {
         min-height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
      }
 
     
@@ -24,15 +27,10 @@
             min-height: nth($pixel_size,5);
             @media (min-width: 900px) {
                 background-color: $color_background_bleach;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 300px;
-                margin: 50px;
-                    
-                    border-radius: $arrondis_prononce;
-                    box-shadow: $shadow;
-            
+                width: 300px;     
+                border-radius: $arrondis_prononce;
+                box-shadow: $shadow;
+        
         }
             
 
@@ -95,9 +93,8 @@
     @media (min-width: 900px) {
         width: 300px;
         
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+     
+
 }
     
         &--cliquable{
