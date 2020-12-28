@@ -65,7 +65,7 @@ footer > .logo__footer {
 @media (min-width: 900px) {
   footer > .logo__footer {
     margin: 0;
-    padding: 0;
+    padding: 17px;
   }
 }
 
@@ -197,6 +197,8 @@ p {
   .validation {
     -webkit-transform: translate(0%, 100%);
             transform: translate(0%, 100%);
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -225,7 +227,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   opacity: 1;
   -webkit-transition: all 400ms;
   transition: all 400ms;
@@ -356,7 +357,6 @@ p {
           justify-content: space-between;
   height: 80px;
   margin: 10px;
-  padding-top: 5px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -410,6 +410,7 @@ p {
     white-space: normal;
     overflow: visible;
     text-align: left;
+    font-size: 0.9rem;
   }
 }
 

@@ -49,7 +49,7 @@ footer > .logo__footer {
 @media (min-width: 900px) {
   footer > .logo__footer {
     margin: 0;
-    padding: 0;
+    padding: 17px;
   }
 }
 footer > .liens_divers {
@@ -146,6 +146,8 @@ p {
 @media (min-width: 900px) {
   .validation {
     transform: translate(0%, 100%);
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -164,7 +166,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   opacity: 1;
   transition: all 400ms;
 }
@@ -246,7 +247,6 @@ p {
   justify-content: space-between;
   height: 80px;
   margin: 10px;
-  padding-top: 5px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -284,6 +284,7 @@ p {
     white-space: normal;
     overflow: visible;
     text-align: left;
+    font-size: 0.9rem;
   }
 }
 .menu__guide--text_style {
