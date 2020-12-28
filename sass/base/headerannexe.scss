@@ -1,9 +1,11 @@
 
+//icon de retour à l'acceuil (flèche)
 .retour_accueil{
     @include direction_horizontal;
 
   
 }
+//le logo
 .header_annexes{
     @include box_remplissage_sans_espace;
     @include largeur_100;

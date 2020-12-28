@@ -1,3 +1,7 @@
+
+//partie fonctionement de l'accueil du site
+
+//conteneur principale
 .fonctionnement{
     @include direction_vertical;
     @include box_remplissage_sans_espace;
@@ -5,10 +9,13 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_bleach;
+
+//partie titre
         &__Titre{
             @include format_titre;
             margin-top: nth($pixel_size ,4);
         }
+//box qui explique les étapes
         &__guide{
            @include boite_format_rectangle_arrondis_leger;
            margin: 20px;
@@ -17,8 +24,8 @@
            display: flex;
            align-items: center;
            
-           
-           
+
+//numérotation des étapes           
             &__number{
                 display: inline-block;
                 @include box_remplissage_sans_espace;

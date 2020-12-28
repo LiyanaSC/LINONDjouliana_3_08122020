@@ -1,3 +1,4 @@
+//conteneur principale des résultats de restaurants
 .restaurants{
     @include direction_vertical;
     @include box_remplissage_sans_espace;
@@ -5,20 +6,22 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_ligth;
-  
+
+//partie titre du conteneur
        &__Titre{
            @include format_titre;
            position: static;
            margin-top: nth($pixel_size ,4);
            margin-bottom: nth($pixel_size ,2);
        }
+//box de résultat
        &__lien_resto{
            @include result;
            padding:0%;
            margin:nth($pixel_size,1);
            border-radius: $arrondis_lege;
            position: relative;
-
+//étiquette indiquant les nouveaux restaurants
            &__new{
                position: absolute;
                background-color: map-get($color-family, third_color);
@@ -26,7 +29,7 @@
                padding: 10px;
                right: 0;
            }
-           
+ //conteur de la photo du résultat          
            &__resultat_contenant_pic{
                display: block;
                @include box_remplissage_sans_espace;
@@ -34,6 +37,7 @@
                
                
            }
+//conteneur du nom du restaurant
            &__titre_photo{
                @include direction_horizontal;
                margin: 0%;
@@ -51,6 +55,7 @@
        }
 
 }
+//classe de la photo
 .photo{
     @include box_remplissage_sans_espace;
     @include largeur_100;
@@ -59,6 +64,7 @@
     height: nth($pixel_size,1)*15;
     border-radius: $arrondis_seperieur;
 }
+//classe du nom du restaurant
 .nom_restau{
     font-weight: bold;
     

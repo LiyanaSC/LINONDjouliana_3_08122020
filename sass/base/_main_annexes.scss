@@ -1,7 +1,8 @@
+//titre de la page avec photo
 .header_section{
     @include box_remplissage_sans_espace;
     @include largeur_100;
-
+//partie photo
     &_entete_resto{
         @include box_remplissage_sans_espace;
         @include largeur_100;
@@ -15,6 +16,7 @@
             object-position: top;
         }
     }
+//nom du restaurant
     &_entete_nom_restau{
         @include direction_horizontal;
         @include largeur_100;
@@ -58,6 +60,7 @@
    
     
 }
+//icon de valisation
 .fa-check-circle{
    
     transform: rotate(0.5turn) translate(-100%);
@@ -66,6 +69,7 @@
     transition: all 400ms;
 
 }
+//adaptation du texte lors de l'animation
 .animated_text{
     @include box_remplissage_sans_espace;
     @include largeur_100;
@@ -93,6 +97,8 @@
                     @media (min-width: 900px){
                     width: 100%;
                     height: 50%;
+                    position: absolute;
+                    bottom: 0;
         
                     }
                     >.fa-check-circle {
@@ -107,7 +113,7 @@
         
     }
     
-
+// résultat des menus
 .menu{
     @include direction_vertical;
     @include box_remplissage_sans_espace;
@@ -116,6 +122,7 @@
     font-family: $font-family-txt;
     background-color: $color_background_ligth;
     padding:  nth($pixel_size,2);
+//titre de chaque partie du menu
     &__titre{
             @include largeur_100;
             @include direction_vertical;
@@ -123,7 +130,7 @@
             margin-bottom: 3px;
             
             
-
+//ligne sous le titre
             &__line{
                     margin: nth($pixel_size,1);
                     height: 3px;
@@ -137,6 +144,7 @@
     
       
     }
+//le conteneurs des résultats des choix proposés
     &__resultat{
         @include largeur_100;
         @include box_remplissage_sans_espace;
@@ -146,6 +154,7 @@
         @include breackpoint_desktop;
         
     }
+//box des plats
     &__guide{
 
         @include direction_horizontal;
@@ -155,16 +164,12 @@
         justify-content: space-between;
         height: nth($pixel_size,8);
         margin: nth($pixel_size,1);
+        padding-top: 5px;
         width: 100%;
         overflow: hidden;
-        
-        
-       // position: relative;
-       
-        
-       
-       
-        justify-content: baseline;
+        position: relative;
+      
+
         
         @include breackpoint_element_adapt;
         @include breackpoint_contenu_column;
@@ -172,12 +177,11 @@
             display: flex;
             justify-content: center;
             height: 110px;
+            align-items: center;
            
         }
-  //      &:hover > .validation {
-  //          transform: translate(0);
-            //       }
-    
+
+ //format du texte   
         &--style_ellipsis{
             text-overflow: ellipsis;
         white-space:nowrap;
@@ -188,16 +192,22 @@
     overflow: visible;
     text-align: left;
     
+
+    
+    
         
         }
 
      
         }
+// style nom principale du plat et prix
         &--text_style{
             font-weight: bold;
             line-height: 1.5;
             font-size: 1.1rem;
             padding-bottom: 0%;
+            
+            
         }
       
              

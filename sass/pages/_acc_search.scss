@@ -1,4 +1,4 @@
-
+//conteneur de la partie recherche
 .recherche
 {
     @include direction_vertical;
@@ -16,7 +16,7 @@
      }
 
     
-    
+//box de recherche icon + zone de recherche
         &__localisation
         {
             @include box_remplissage_sans_espace;
@@ -30,11 +30,13 @@
                 width: 300px;     
                 border-radius: $arrondis_prononce;
                 box-shadow: $shadow;
+                margin:10px;
         
         }
             
 
         }
+//partie description du site
         &__description{
             display: block;
             margin: 0%;
@@ -44,7 +46,7 @@
             font-size: nth($text-sizes,1);
             font-weight: lighter;
             
-           
+//style gras           
                 &--bold{
                     display: block;
                     font-weight: bold;
@@ -54,6 +56,8 @@
         }
 
 }
+
+// id pour l'input de recherche
 #localisation_client{
     @include box_remplissage_sans_espace;
     border: none;
@@ -71,7 +75,7 @@
      }
 
 }
-
+//bouton de recherche
 .btn{
            
     background: $degrade;
@@ -92,6 +96,7 @@
     }
     @media (min-width: 900px) {
         width: 300px;
+        margin: 10px;
         
      
 
