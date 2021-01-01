@@ -6,6 +6,7 @@ body
     @include hauteur_100;
     margin: 0%;
     background-color: $color_background_ligth;
+    padding: 0%;
   
 
 }
@@ -28,6 +29,7 @@ main
 {
     @include box_remplissage_sans_espace;
     @include largeur_100;
+    
 
 }
 
@@ -45,7 +47,7 @@ footer{
     background-color: $color_background_dark;
     color: $text_color_light;
    padding: 20px ;
-
+   
         >.logo__footer{
             
             color:white;

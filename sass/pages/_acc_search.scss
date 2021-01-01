@@ -30,7 +30,8 @@
                 width: 300px;     
                 border-radius: $arrondis_prononce;
                 box-shadow: $shadow;
-                margin:10px;
+                
+              
         
         }
             
@@ -45,6 +46,8 @@
             word-break: break-word;
             font-size: nth($text-sizes,1);
             font-weight: lighter;
+            padding-bottom: 30px;
+            
             
 //style gras           
                 &--bold{

@@ -9,11 +9,14 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_bleach;
+    padding-bottom: 30px;
+    padding-top: 30px;
+   
 
 //partie titre
         &__Titre{
             @include format_titre;
-            margin-top: nth($pixel_size ,4);
+         
         }
 //box qui explique les étapes
         &__guide{
