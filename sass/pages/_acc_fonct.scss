@@ -26,7 +26,11 @@
            background-color: $color_background_ligth;
            display: flex;
            align-items: center;
+           position: relative;
+           padding-left: nth($pixel_size, 2);
            text-align: center;
+           
+           
            
 
 //numérotation des étapes           
@@ -34,8 +38,8 @@
                 display: inline-block;
                 @include box_remplissage_sans_espace;
                 @include txt-center;
-                position: relative;
-                left: -20px;
+                position: absolute;
+                left: -10px;
                 background-color: map-get($color-family, first_color);
                 border-radius: $cercle_petit;
                 width: nth($pixel_size,2);

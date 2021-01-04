@@ -433,6 +433,8 @@ p {
   background-color: whitesmoke;
   display: flex;
   align-items: center;
+  position: relative;
+  padding-left: 20px;
   text-align: center;
 }
 .fonctionnement__guide__number {
@@ -440,8 +442,8 @@ p {
   padding: 0%;
   margin: 0%;
   text-align: center;
-  position: relative;
-  left: -20px;
+  position: absolute;
+  left: -10px;
   background-color: #9356DC;
   border-radius: 10px;
   width: 20px;
