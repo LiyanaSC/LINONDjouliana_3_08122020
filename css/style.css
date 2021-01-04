@@ -217,6 +217,9 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 3px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-left: 10px;
 }
 .menu__titre__line {
   margin: 10px;
@@ -344,7 +347,6 @@ p {
   display: block;
   margin: 0%;
   text-align: center;
-  word-break: break-word;
   font-size: 1rem;
   font-weight: lighter;
   padding-bottom: 30px;
@@ -397,8 +399,6 @@ p {
 .btn--cliquable {
   padding: 0%;
   margin: 0%;
-  height: 100%;
-  width: 100%;
   color: white;
   display: flex;
   justify-content: center;

@@ -129,6 +129,9 @@
             @include direction_vertical;
             justify-content: flex-start;
             margin-bottom: 3px;
+            font-size: nth($text-sizes, 1 );
+            font-weight: normal;
+            margin-left: nth($pixel_size, 1 );
             
             
 //ligne sous le titre
