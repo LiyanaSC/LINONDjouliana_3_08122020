@@ -8,6 +8,7 @@ body
     @include hauteur_100;
     margin: 0%;
     background-color: $color_background_ligth;
+    
   
 
 }
@@ -30,6 +31,7 @@ main
 {
     @include box_remplissage_sans_espace;
     @include largeur_100;
+    padding-bottom: nth($pixel_size,3)
 
 }
 
