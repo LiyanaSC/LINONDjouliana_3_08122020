@@ -93,7 +93,7 @@
 @for $c from 1 to 7 {
     .clignotant#{$c} {
         animation: flash 2000ms backwards;
-        animation-delay: 2000ms*$c;
+        animation-delay: 3000ms*$c;
         animation-iteration-count: 1;
         
     }
@@ -122,7 +122,7 @@
 @for $c from 1 to 7 {
     .icon_color#{$c} {
         animation: flash_icon 2s backwards;
-        animation-delay: 2s*$c;
+        animation-delay: 3s*$c;
         animation-iteration-count: 1;
         
     }

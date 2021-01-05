@@ -313,6 +313,7 @@ p {
   align-items: center;
   font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
+  padding-bottom: 30px;
 }
 @media (min-width: 900px) {
   .recherche {
@@ -622,37 +623,37 @@ p {
 }
 .clignotant1 {
   animation: flash 2000ms backwards;
-  animation-delay: 2000ms;
+  animation-delay: 3000ms;
   animation-iteration-count: 1;
 }
 
 .clignotant2 {
   animation: flash 2000ms backwards;
-  animation-delay: 4000ms;
+  animation-delay: 6000ms;
   animation-iteration-count: 1;
 }
 
 .clignotant3 {
   animation: flash 2000ms backwards;
-  animation-delay: 6000ms;
+  animation-delay: 9000ms;
   animation-iteration-count: 1;
 }
 
 .clignotant4 {
   animation: flash 2000ms backwards;
-  animation-delay: 8000ms;
+  animation-delay: 12000ms;
   animation-iteration-count: 1;
 }
 
 .clignotant5 {
   animation: flash 2000ms backwards;
-  animation-delay: 10000ms;
+  animation-delay: 15000ms;
   animation-iteration-count: 1;
 }
 
 .clignotant6 {
   animation: flash 2000ms backwards;
-  animation-delay: 12000ms;
+  animation-delay: 18000ms;
   animation-iteration-count: 1;
 }
 
@@ -669,37 +670,37 @@ p {
 }
 .icon_color1 {
   animation: flash_icon 2s backwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-iteration-count: 1;
 }
 
 .icon_color2 {
   animation: flash_icon 2s backwards;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-iteration-count: 1;
 }
 
 .icon_color3 {
   animation: flash_icon 2s backwards;
-  animation-delay: 6s;
+  animation-delay: 9s;
   animation-iteration-count: 1;
 }
 
 .icon_color4 {
   animation: flash_icon 2s backwards;
-  animation-delay: 8s;
+  animation-delay: 12s;
   animation-iteration-count: 1;
 }
 
 .icon_color5 {
   animation: flash_icon 2s backwards;
-  animation-delay: 10s;
+  animation-delay: 15s;
   animation-iteration-count: 1;
 }
 
 .icon_color6 {
   animation: flash_icon 2s backwards;
-  animation-delay: 12s;
+  animation-delay: 18s;
   animation-iteration-count: 1;
 }
 

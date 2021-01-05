@@ -7,6 +7,7 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: darken(white, 4%);
+    padding-bottom: nth($pixel_size, 3 );
     @include breackpoint_desktop;
     @media (min-width: 900px) {
         min-height: 200px;
