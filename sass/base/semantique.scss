@@ -50,8 +50,11 @@ footer{
     background-color: $color_background_dark;
     color: $text_color_light;
    padding: 20px ;
-   display: flex;
-   align-items: center;
+   @media (min-width: 900px){
+    display: flex;
+    align-items: center;
+}
+  
 
         >.logo__footer{
             
