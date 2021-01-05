@@ -23,6 +23,7 @@ body
     align-items: center;
     justify-content: center;
 
+
 }
 .logo{
     font-family: $font-family-logo;
@@ -49,6 +50,8 @@ footer{
     background-color: $color_background_dark;
     color: $text_color_light;
    padding: 20px ;
+   display: flex;
+   align-items: center;
 
         >.logo__footer{
             
