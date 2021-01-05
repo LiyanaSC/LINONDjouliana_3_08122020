@@ -70,7 +70,7 @@ $color-family: (first_color:#9356DC, second_color:#FF79DA, third_color:#99E2D0, 
     margin: 0%;
     width: 100%;
 
-    text-indent: 30px;
+    text-indent: nth($pixel_size,3);
     font-size: nth($text-sizes,2);
 }
 @mixin result {

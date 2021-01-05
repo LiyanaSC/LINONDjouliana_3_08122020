@@ -10,7 +10,7 @@
     padding-bottom: nth($pixel_size, 3 );
     @include breackpoint_desktop;
     @media (min-width: 900px) {
-        min-height: 200px;
+        min-height: nth($pixel_size,2)*10;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -28,7 +28,7 @@
             min-height: nth($pixel_size,5);
             @media (min-width: 900px) {
                 background-color: $color_background_bleach;
-                width: 300px;     
+                width: nth($pixel_size,3)*10;     
                 border-radius: $arrondis_prononce;
                 box-shadow: $shadow;
                 
@@ -47,7 +47,7 @@
             
             font-size: nth($text-sizes,1);
             font-weight: lighter;
-            padding-bottom: 30px;
+            padding-bottom: nth($pixel_size,3);
             
             
 //style gras           
@@ -55,7 +55,7 @@
                     display: block;
                     font-weight: bold;
                     font-size: nth($text-sizes,2);
-                    margin-top: 40px;
+                    margin-top: nth($pixel_size,4);
                 }
         }
 
@@ -99,8 +99,8 @@
         box-shadow:0px 5px 10px rgb(168, 168, 168);
     }
     @media (min-width: 900px) {
-        width: 300px;
-        margin: 10px;
+        width: nth($pixel_size,3)*10;
+        margin: nth($pixel_size,1);
         
      
 

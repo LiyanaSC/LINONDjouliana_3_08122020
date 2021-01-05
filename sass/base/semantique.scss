@@ -49,7 +49,7 @@ footer{
     @include largeur_100;
     background-color: $color_background_dark;
     color: $text_color_light;
-   padding: 20px ;
+   padding: nth($pixel_size,2) ;
    @media (min-width: 900px){
     display: flex;
     align-items: center;

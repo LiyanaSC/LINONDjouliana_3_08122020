@@ -9,8 +9,8 @@
     @include centrer;
     font-family: $font-family-txt;
     background-color: $color_background_bleach;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: nth($pixel_size,3);
+    padding-top: nth($pixel_size,3);
    
 
 //partie titre
@@ -21,7 +21,7 @@
 //box qui explique les étapes
         &__guide{
            @include boite_format_rectangle_arrondis_leger;
-           margin: 20px;
+           margin: nth($pixel_size,2);
            height: nth($pixel_size ,7);
            background-color: $color_background_ligth;
            display: flex;

@@ -26,7 +26,7 @@
                position: absolute;
                background-color: map-get($color-family, third_color);
                color: darken(map-get($color-family, third_color), 40%);
-               padding: 10px;
+               padding: nth($pixel_size,1);
                right: 0;
            }
  //conteur de la photo du résultat          

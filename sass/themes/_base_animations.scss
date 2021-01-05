@@ -9,7 +9,7 @@
     z-index: 1;
    height: 100%;
    width: 100%;
-   margin-right: 20px;
+   margin-right: nth($pixel_size,2);
    padding: 0%;
 
 
@@ -30,7 +30,7 @@
     position: relative;
     z-index: 2;
     padding: 0%;
-    margin-right: 20px;
+    margin-right: nth($pixel_size,2);
     
     transform: scale(1.5,2);
     transition: all 800ms;
@@ -150,9 +150,8 @@
     animation-duration: 2s;
     &__spinner{
         margin: auto;
-        //margin-bottom: 10px;
-        width: 50px;
-        height: 50px;
+        width: nth($pixel_size,5);
+        height: nth($pixel_size,5) ;
         border-top: 8px map-get($color-family ,first_color) solid;
         border-bottom: 8px map-get($color-family ,second_color) solid;
         border-right: 8px map-get($color-family ,third_color) solid;
@@ -165,7 +164,7 @@
     }
     &__text{
         margin: auto;
-        margin-top: 10px;
+        margin-top: nth($pixel_size,1);
         font-family: $font-family-logo;
     }
 }
