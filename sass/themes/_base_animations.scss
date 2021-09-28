@@ -1,58 +1,48 @@
 //les coeurs
-.heart_checked{
-    color:  #9356DC;
-  
+.heart_checked {
+    color: #9356DC;
     position: absolute;
-   top: 0px;
-   left: 0px; 
-
+    top: 0px;
+    left: 0px;
     z-index: 1;
-   height: 100%;
-   width: 100%;
-   margin-right: nth($pixel_size,2);
-   padding: 0%;
-
-
-   transform:  scale(0);
-   transition: transform 400ms;
-   animation-fill-mode: forwards;
-   background: $degrade;
-   background-clip: text;
-   -webkit-background-clip: text;
+    height: 100%;
+    width: 100%;
+    margin-right: nth($pixel_size, 2);
+    padding: 0%;
+    transform: scale(0);
+    transition: transform 400ms;
+    animation-fill-mode: forwards;
+    background: $degrade;
+    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
-   
-  
-
 }
 
-.heart_not_checked{
+.heart_not_checked {
     color: black;
     position: relative;
     z-index: 2;
     padding: 0%;
-    margin-right: nth($pixel_size,2);
-    
-    transform: scale(1.5,2);
+    margin-right: nth($pixel_size, 2);
+    transform: scale(1.5, 2);
     transition: all 800ms;
-   overflow: hidden;
-     &:hover{
-    transform: scale(1.4,1.9);
-    color: transparent;
-
-      > .heart_checked{
-          transform: scale(1,1);
-         }
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.4, 1.9);
+        color: transparent;
+        >.heart_checked {
+            transform: scale(1, 1);
+        }
     }
- 
-
 }
+
 //les apparitions de boites successives
 @keyframes appearance {
     0% {
         transform: translate(0%, 100%);
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 0;
     }
     100% {
@@ -65,29 +55,21 @@
     .appear#{$i} {
         animation: appearance 1000ms both;
         animation-delay: 200ms*$i;
-        
-        
     }
-
 }
 
 //l'animation couleur pour le fonctionnement du site 
-    //partie background
+//partie background
 @keyframes flash {
-    0%{
+    0% {
         background-color: $color_background_ligth;
-      
     }
-    50%{
+    50% {
         background-color: lighten(map-get($color-family, first_color), 32%);
-      
     }
-  
-    100%{
+    100% {
         background-color: $color_background_ligth;
-        
     }
-
 }
 
 @for $c from 1 to 7 {
@@ -95,43 +77,32 @@
         animation: flash 2000ms backwards;
         animation-delay: 3000ms*$c;
         animation-iteration-count: 1;
-        
     }
-    
 }
-    //partie icon
-@keyframes flash_icon{
-    0%{
-        
+
+//partie icon
+@keyframes flash_icon {
+    0% {
         color: black;
     }
-    50%{
-        
+    50% {
         color: map-get($color-family, first_color);
     }
-  
-    100%{
-       
+    100% {
         color: black;
     }
-
 }
-
-
 
 @for $c from 1 to 7 {
     .icon_color#{$c} {
         animation: flash_icon 2s backwards;
         animation-delay: 3s*$c;
         animation-iteration-count: 1;
-        
     }
-    
 }
 
 //load spinner
-
-.chargement__fond{
+.chargement__fond {
     background-color: white;
     position: fixed;
     z-index: 9;
@@ -148,52 +119,46 @@
     animation: disparait both;
     animation-delay: 3s;
     animation-duration: 2s;
-    &__spinner{
+    &__spinner {
         margin: auto;
-        width: nth($pixel_size,5);
-        height: nth($pixel_size,5) ;
-        border-top: 8px map-get($color-family ,first_color) solid;
-        border-bottom: 8px map-get($color-family ,second_color) solid;
-        border-right: 8px map-get($color-family ,third_color) solid;
+        width: nth($pixel_size, 5);
+        height: nth($pixel_size, 5);
+        border-top: 8px map-get($color-family, first_color) solid;
+        border-bottom: 8px map-get($color-family, second_color) solid;
+        border-right: 8px map-get($color-family, third_color) solid;
         border-left: 8px white solid;
         border-radius: 50%;
         animation: loading linear;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-        
     }
-    &__text{
+    &__text {
         margin: auto;
-        margin-top: nth($pixel_size,1);
+        margin-top: nth($pixel_size, 1);
         font-family: $font-family-logo;
     }
 }
 
-@keyframes loading{
-    0%{
+@keyframes loading {
+    0% {
         transform: rotate(0turn);
     }
-    100%{
+    100% {
         transform: rotate(1turn);
     }
 }
 
-@keyframes disparait{
-    0%{
+@keyframes disparait {
+    0% {
         opacity: 1;
-        
     }
-    20%{
+    20% {
         opacity: 1;
-    
-        
     }
-    80%{
+    80% {
         opacity: 0;
     }
-
-    100%{
-        
+    100% {
         opacity: 0;
         transform: scale(0);
     }
